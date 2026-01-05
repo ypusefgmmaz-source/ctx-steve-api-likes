@@ -17,7 +17,7 @@ def load_accounts():
 
 # ✅ جلب التوكن من API
 async def fetch_token(session, uid, password):
-    url = f"https://mero-king-api-jwt.vercel.app/get?uid={uid}&password={password}"
+    url = f"https://ctx-steve-jwt.vercel.app/token?uid={uid}&password={password}"
     try:
         async with session.get(url, timeout=10) as res:
             if res.status == 200:
